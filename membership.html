@@ -1,104 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership</title>
+    <title>test</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="membership.css">
+
+    <!-- Jquery library CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container">
-    <div class="header d-flex align-items-center justify-content-around position-fixed ">
-        <nav class="navbar navbar-light ">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./jetclass-white-horizontal.svg" alt="" width="200" height="20">
-              </a>
-            </div>
-          </nav>
-          <div class="navbar menu ">
-            <nav class="navbar navbar-expand-lg  ">
-            <div class="container-fluid ">  
-              <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                <ul class="navbar-nav ">
-                  <li class="nav-item ">
-                    <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" href="#">HOW IT WORKS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" href="#">FLEET</a>
-                  </li>
-                  <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle active text-white" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      SERVICES
-                    </a>
-                    <ul class="dropdown-menu bg-dark  dropdown-color">
-                      <li><a class="dropdown-item text-white" href="#">PRIVATE JET CHARTER</a></li>
-                      <li><a class="dropdown-item text-white" href="#">HELICOPTER CHARTERS</a></li>
-                      <li><a class="dropdown-item text-white" href="#">MEDICAL FLIGHTS</a></li>
-                      <li><a class="dropdown-item text-white" href="#">CARGO CHARTERS</a></li>
-                      <li><a class="dropdown-item text-white" href="#">GROUP CHARTERS</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">MEMBERSHIP TYPES</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </div>
-    <div class="button">
-        <button class="button1">REGISTER</button>
-        <button class="button2">LOGIN</button>
-    </div>
-</div>
-</div>
-    <section class=" second-section ">
-        <div class="hero-section ">
-            <div class="d-flex row align-items-center justify-content-around ">
-                <div class="col-12 d-flex justify-content-center">
-                    <h1>hi</h1>
-                </div>
-                <div class="col-12 hero-section-second-col d-flex justify-content-center">
-                    <div class="col-6">
-                    <img src="m1.png" alt="">
-                </div>
-            </div>
-            
-        </div>
 
-
-
-
-
-
-           <!-- <nav class="navbar navbar-expand-lg navbar-light position-fixed d-flex ">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./jetclass-white-horizontal.svg" alt="" width="200" height="20">
-            </a>
-            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container-fluid">
+            <img src="./jetclass-white-horizontal.svg" class="logo-dimensions">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto b-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="#">HOW IT WORKS</a>
+                        <a class="nav-link active" href="#">HOW IT WORKS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="#">FLEET</a>
+                        <a class="nav-link active" href="#">FLEET</a>
                     </li>
                     <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle active text-white" href="#" role="button"
@@ -116,45 +54,674 @@
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="#">MEMBERSHIP TYPES</a>
                     </li>
-                    <ul
-                        class="custom_nav auth-nav list-unstyled ms-lg-auto d-md-flex justify-content-md-center items-align-md-center">
-                        <li class="action-buttons text-center mx-auto my-md-auto">
-                            <a class="py-sm-10 register_btn me-2"
-                                href="https://app.jetclass.com/auth/register">REGISTER</a>
-                            <a class="py-sm-10 login_btn" href="https://app.jetclass.com/auth/login">LOGIN</a>
-                        </li>
-                    </ul>
                 </ul>
+                <span class="navbar-text">
+                    <a class="py-sm-10 register-btn me-2" href="https://app.jetclass.com/auth/register">REGISTER</a>
+                    <a class="py-sm-10 login-btn" href="https://app.jetclass.com/auth/login">LOGIN</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="first-section">
+        <div class="container">
+            <div class="row row-height align-content-center">
+                <div class="col-md-6 order-1 order-md-0 col-sm-12">
+                    <div class="text-center text-md-start">
+                        <h1 class="text-light">Membership Types</h1>
+                        <!-- <div class="h1 text-light">Types</div> -->
+
+                        <p class="text-light">The power is at your fingertips. JetClass members have privileged access
+                            to transparent quotes
+                            directly from our global network of aircraft operators. We have drawn up the perfect
+                            membership
+                            program, with no hidden fees.</p>
+                        <button class="register-btn">JOIN FOR FREE</button>
+                    </div>
+                </div>
+                <div class="col-md-6 order-0 order-md-1 col-sm-12 custom-width-jet img-fluid mb-5 mb-md-0">
+                    <img src="m1.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <div class="second-section mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mx-auto py-5">
+                    <div class="text-center mb-5">
+                        <h2><span class="fw-normal ">The Right Membership</span> For Every Traveler</h2>
+                    </div>
+                    <div class="table table-borderless table-striped table-responsive-lg ">
+                        <table class="table table-borderless table-shadow  table-layout">
+                            <thead>
+                                <tr>
+                                    <th class="table-heading">Details</th>
+                                    <th class="table-heading">Base</th>
+                                    <th class="table-heading">Elite</th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th id="table-second-heading">Pay As You Go</th>
+                                    <th id="table-second-heading2">Recommended For Frequent Travelers flying 20+ hours a
+                                        year</th>
+                                </tr>
+                                <tr>
+                                    <th> </th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th> </th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Price</td>
+                                    <td>FREE</td>
+                                    <td>@USD 17,900</td>
+                                </tr>
+                                <tr>
+                                    <td>Markups <br>(Agent Commission)</td>
+                                    <td>Dynamic markup</td>
+                                    <td><u>NO</u> MARKUP</td>
+                                </tr>
+                                <tr>
+                                    <td>Payment and Charter Contract <br>with</td>
+                                    <td>JetClass</td>
+                                    <td>Directly with the Operator</td>
+                                </tr>
+                                <tr>
+                                    <td>Aircraft Operator Details</td>
+                                    <td>Limited access</td>
+                                    <td>Full disclosure of operator and aircraft details</td>
+                                </tr>
+                                <tr>
+                                    <td>ETA on first quotes</td>
+                                    <td>On average within 2 hours</td>
+                                    <td>On average within 30 minutes</td>
+                                </tr>
+                                <tr>
+                                    <td>Flight Management</td>
+                                    <td>Pre-flight operational support</td>
+                                    <td>Dedicated Flight Ops Manager</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><button class="register-btn">JOIN FOR FREE</button></td>
+                                    <td><button class="register-btn">ENROLL NOW</button></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container-fluid  img-bg">
+        <div class="row">
+            <div class="col-11 mx-auto max-width pb-5 ">
+                <h2 class="blue-heading-align my-5">
+                    <span class="blue-heading">Unrivalled Flight </span>Support
+                </h2>
+                <div class="container ">
+                    <div class="row justify-content-space-between  ">
+                        <div class="col-12 col-sm-6 col-lg-3 p-4 p-xl-5 grid-child">
+
+                            <img src="flight-brief.svg" class="grid-img-align mb-2" alt="">
+                            <h3 class="blue-heading">Flight brief</h3>
+                            <p class="grid-para-clr">We send pre-departure flight briefs to keep you up-to-date and
+                                informed.</p>
+
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 p-4 p-xl-5 grid-child ">
+                            <img src="status-update.svg" class="grid-img-align mb-2" alt="">
+                            <h3 class="blue-heading">Status Update</h3>
+                            <p class="grid-para-clr">Constant update on the status of permissions and slot
+                                confirmations on the route.</p>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3 p-4 p-xl-5 grid-child ">
+                            <img src="forecast.svg" class="grid-img-align mb-2" alt="">
+                            <h3 class="blue-heading">Forecast</h3>
+                            <p class="grid-para-clr">Up to date weather forecast for both departure and arrival
+                                destinations, to predict
+                                potential delays</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 p-4 p-xl-5 grid-child">
+                            <img src="assistance.svg" class="grid-img-align mb-2" alt="">
+                            <h3 class="blue-heading">Assistance</h3>
+                            <p class="grid-para-clr">Assistance with travel documents (e.g. visa applications, & any
+                                other specific entry
+                                requirements at your destination)</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 p-4 p-xl-5 grid-child ">
+                            <img src="catering.svg" class="grid-img-align mb-2" alt="">
+                            <h3 class="blue-heading">Catering</h3>
+                            <p class="grid-para-clr">In-flight catering can be ordered from our partnered exclusive
+                                caterers, or choose from your preferred restaurant.</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 p-4 p-xl-5 grid-child">
+                            <img src="arrangements.svg" class="grid-img-align mb-2" alt="">
+                            <h3 class="blue-heading">Arrangements</h3>
+                            <p class="grid-para-clr">Arrangements for specific transfers and bodyguard services if
+                                required for our customers.</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 p-4 p-xl-5 grid-child ">
+                            <img src="immigration.svg" class="grid-img-align mb-2" alt="">
+                            <h3 class="blue-heading">Immigration</h3>
+                            <p class="grid-para-clr">At JetClass we provide Immigration & Customs clearances
+                                assistance to our clients.</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 p-4 p-xl-5 grid-child">
+                            <img src="report.svg" class="grid-img-align mb-2" alt="">
+                            <h3 class="blue-heading">Report</h3>
+                            <p class="grid-para-clr">Regular flight status notifications & post-flight reports to
+                                ensure a seamless experience.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </nav> -->
+    </section>
+    <section class="container-fluid  third-black-bg">
+        <div class="row  mb-5">
+            <div class="col-11 max-width mx-auto py-5 ">
+                <h2 class="white-heading-align  my-5">
+                    Why the <span class="blue-heading">Elite Program</span>
+                </h2>
+            </div>
+            <!-- gx-md-2 gx-md-5 -->
+            <div class="container-fluid ">
+                <div class="row justify-content-between mb-5  mx-4 mx-md-2 px-sm-0 ">
+                    <div class="col-12 col-md-4 px-2 px-lg-5  mt-5 text-start">
+                        <img src="commission.svg" class="grid-img-align mb-2" alt="">
+                        <h3 class="blue-heading-2">0% Commission</h3>
+                        <p class="grid-para-clr-2">Avoid traditional broker fees which range between 5% - 50% on top
+                            of the actual charter cost. Besides not charging such commissions, we are 100%
+                            transparent in our pricing with no hidden extras.</p>
+
+                    </div>
+                    <div class="col-12 col-md-4 px-2 px-lg-5  mt-5 text-start">
+                        <img src="direct-payment.svg" class="grid-img-align mb-2" alt="">
+                        <h3 class="blue-heading-2">Direct Payment to Operator</h3>
+                        <p class="grid-para-clr-2">Our direct-to-operator payment option allows you to book
+                            last-minute flights as well as further underlines our transparent pricing structure.</p>
+                    </div>
+
+                    <div class="col-12 col-md-4 px-2 px-lg-5  mt-5 text-start">
+                        <img src="quick-qoutes.svg" class="grid-img-align mb-2" alt="">
+                        <h3 class="blue-heading-2">Quick Quotes Within 30 Minutes</h3>
+                        <p class="grid-para-clr-2">Experience a new level of service! Within minutes, our 24/7 team
+                            will search for the best available aircraft, fight for the best prices, and present you
+                            with the sourced options.</p>
+                    </div>
+                    <div class="col-12 col-md-4 px-2 px-lg-5  mt-5 text-start">
+                        <img src="verified-aircraft.svg" class="grid-img-align mb-2" alt="">
+                        <h3 class="blue-heading-2">Verified Aircraft & Operator Details</h3>
+                        <p class="grid-para-clr-2">Besides disclosing operator details, we display relevant aircraft
+                            details, including the tail registration, YOM, and images, so you can cross-verify the
+                            details yourself before confirming the flight.</p>
+                    </div>
+                    <div class="col-12 col-md-4 px-2 px-lg-5  mt-5 text-start">
+                        <img src="dedicated-flight.svg" class="grid-img-align mb-2" alt="">
+                        <h3 class="blue-heading-2">Dedicated Flight Support
+                        </h3>
+                        <p class="grid-para-clr-2">From pre-flight planning and booking to complete post-flight
+                            management, our team of industry professionals ensures every trip is a tailor-made
+                            pleasure.</p>
+                    </div>
+                    <div class="col-12 col-md-4 px-2 px-lg-5  mt-5 text-start">
+                        <img src="no-depost.svg" class="grid-img-align mb-2" alt="">
+                        <h3 class="blue-heading-2">No Deposit or Waiting Period
+                        </h3>
+                        <p class="grid-para-clr-2">After purchasing your membership, the only additional costs are
+                            the
+                            actual charter cost and any additional flight-related fees such as de-icing, special
+                            catering, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-11 mx-auto max-width">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-0 order-0 custom-width-section">
+                        <img src="plane.jpg" alt="">
+                    </div>
+                    <div class="col-md-6  order-md-1 order-0  mt-md-0 mt-5">
+                        <h2 class="white-heading-align mx-auto text-start ">
+                            Who can <span class="blue-heading">benefit from this?</span>
+                        </h2>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-lg-1 mt-4">
+                            <div class="col">
+                                <div class="col mb-3 d-flex align-items-center">
+                                    <img src="tick.svg" class="me-3" alt="">
+                                    <div class="text-light">Frequent flyers</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="col mb-3 d-flex align-items-center">
+                                    <img src="tick.svg" class="me-3" alt="">
+                                    <div class="text-light">Government</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="col mb-3 d-flex align-items-center">
+                                    <img src="tick.svg" class="me-3" alt="">
+                                    <div class="text-light">MICE agencies</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="col mb-3 d-flex align-items-center">
+                                    <img src="tick.svg" class="me-3" alt="">
+                                    <div class="text-light">Corporates</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="col mb-3 d-flex align-items-center">
+                                    <img src="tick.svg" class="me-3" alt="">
+                                    <div class="text-light">Family offices</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="col mb-3 d-flex align-items-center">
+                                    <img src="tick.svg" class="me-3" alt="">
+                                    <div class="text-light">Travel agent</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-11 mx-auto">
+                <h2 class="white-heading-align custom-align-for-heading">
+                    <div>Our Elite Program</div>
+                    <div class="blue-heading">For Frequent Flyers</div>
+                </h2>
+                <p class="text-light custom-width-for-para text-start text-md-center mx-auto my-5">Our
+                    frequent flyer program, in addition
+                    to exclusive access to a global fleet of aircraft, offers unique pre and post flight benefits
+                    befitting your exclusive Elite membership status.</p>
+            </div>
+            <div class="col-11 col-md-8 col-lg-6  mx-auto d-flex justify-content-center">
+                <div class="row w-100 ps-md-5 ms-xl-5 ">
+                    <div class="col-md-6 col-sm-12 ps-0">
+                        <div class="col">
+                            <div class="col mb-3 d-flex align-items-top">
+                                <img src="tick.svg" class="me-3" alt="">
+                                <div class="text-light">NO Markups</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col mb-3 d-flex align-items-top">
+                                <img src="tick.svg" class="me-3" alt="">
+                                <div class="text-light">Verified aircraft & operator details</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ps-0">
+                        <div class="col">
+                            <div class="col mb-3 d-flex align-items-top">
+                                <img src="tick.svg" class="me-3" alt="">
+                                <div class="text-light">Dedicated flight support</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col mb-3 d-flex align-items-top">
+                                <img src="tick.svg" class="me-3" alt="">
+                                <div class="text-light">Quick quotes within 30 minutes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid my-5">
+                <div class="col-11 col-md-8 col-lg-6 mx-auto ">
+                    <div class="card card-background">
+                        <div class="card-body text-light ">
+                            <div class="row ">
+                                <div class="col-md-6 enroll-tab-content-center">
+                                    <h2>Enroll Now</h2>
+                                    <p>and become an Elite Member</p>
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center enroll-btn-center justify-content-end">
+                                    <div class="text-center my-3 ">
+                                        <a class="enroll-button m-1" href="#">$
+                                            17,900/year</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row my-5">
+                    <div class="col-11 mx-auto">
+                        <h2 class="white-heading-align  my-5">
+                            Experience <span class="blue-heading">the difference</span>
+                        </h2>
+                        <p class="text-center mx-auto comp-slider-caption my-5 w-md-50">
+                            No markups with full disclosure of aircraft and operator details
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mb-1 mb-5 ">
+                <div class="container-lg">
+                    <figure class="cd-image-container is-visible">
+                        <img src="/members.png" class="img-fluid">
+                        <span class="cd-img-label" data-type="original"></span>
+                        <div class="cd-resize-img">
+                            <img src="/base.png" class="img-fluid">
+                            <span class="cd-img-label" data-type="modified"></span>
+                        </div>
+                        <span class="cd-handle">
+                            <div>
+                                <img src="exchange.svg">
+                            </div>
+                            <div class="img-comp-drag-text">Drag </div>
+                        </span>
+                    </figure>
+                </div>
+            </div>
+    </section>
+    <section class="my-5 sec-bg-img">
+        <div class="container py-sm-5">
+            <div class="row">
+                <div class="col-md-11 mx-auto text-center">
+                    <h1 class="text-dark  my-5">
+                        Not sure which <span class="blue-heading"> membership is right for you?</span>
+                    </h1>
+                    <p class="text-dark custom-width-for-para-2 text-center mx-auto my-5">
+                        Begin your journey for free by using our revolutionary private jet booking platform
+                        and experience the benefits of our unparalleled service.
+                    </p>
+                </div>
+                <div class=" text-center">
+                    <button class="register-btn"> JOIN FOR FREE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="container mb-5">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <h2 class="white-heading-align text-dark  my-5">
+                        Any <span class="blue-heading">questions left?</span>
+                    </h2>
+                    <div class="container shadow">
+                        <div class="row">
+                            <div
+                                class=" col-md-4 reach-column-bg-style reach-column-pic-style text-left px-2 px-lg-5 py-5">
+                                <div class="header-left  ">
+                                    <div class="d-flex justify-content-lg-start align-items-center pb-3 py-0 m-0">
+                                        <img class="me-4" width="30px" src="phone.png" alt="">
+                                        <div class="text-white font-size-reachus">Reach us</div>
+                                    </div>
+                                    <div class="d-flex justify-content-lg-start align-items-center pb-3">
+                                        <img class="me-4" src="usa.png" width="30px" alt="">
+                                        <h6 class="text-white fw-light fs-usuk">US: +1 (305) 250-2023</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-lg-start align-items-center ">
+                                        <img class="me-4" src="uk.png" width="30px" alt="">
+                                        <h6 class="text-white fw-light fs-usuk">US: +1 (305) 250-2023</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 bg-white text-black px-4 py-5">
+                                <div class="header-right">
+                                    <h1>Write us</h1>
+                                    <form id="contact-from " class=" mt-4 needs-validation" novalidate>
+                                        <div class="row ">
+                                            <div class="col-md-6 my-4 ">
+                                                <input type="input" class="form-style form-control px-0"
+                                                    placeholder="Full Name" id="name" required>
+                                            </div>
+                                            <div class="col-md-6 my-4 ">
+                                                <input type="input" id="email" class="form-style form-control px-0"
+                                                    placeholder="Email" required>
+                                            </div>
+                                            <div class="col-12 my-4 ">
+                                                <textarea placeholder="Message" class="form-style form-control px-0"
+                                                     id="message" rows="1" required></textarea>
+                                            </div>
+                                            <div class="col-12 my-4 ">
+                                                <input type="input" id="phone" class="form-style form-control px-0"
+                                                    placeholder="Phone" required>
+                                            </div>
+                                            <div class="col-12 my-4 d-flex justify-content-end">
+                                                <button type="submit" onclick="submitFrom();"
+                                                    class="form-submit-btn text-white">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid footer-bd-style px-5">
+        <div class="row">
+            <div class="col-11 mx-auto py-5">
+                <div class="row pb-5 justify-content-between">
+                    <div class="col-md-2 col-12 text-start mb-5 mb-md-0">
+                        <h4 class="footer-heading">
+                            Home
+                        </h4>
+                        <ul class="footer-list">
+                            <li>How it works</li>
+                            <li>Membership</li>
+                            <li>Register</li>
+                            <li>Login</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-12 text-start mb-5 mb-md-0">
+                        <h4 class="footer-heading">
+                            Services
+                        </h4>
+                        <ul class="footer-list">
+                            <li>Private jet Charters</li>
+                            <li>Group Charters</li>
+                            <li>Helicopter Charters</li>
+                            <li>Medical Flights</li>
+                            <li>Cargo Charters</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-12 text-start mb-5 mb-md-0">
+                        <h4 class="footer-heading">
+                            Legal
+                        </h4>
+                        <ul class="footer-list">
+                            <li>Privacy Policy</li>
+                            <li>Imprint & Legal</li>
+                            <li class="my-3 align-content-center">
+                                JetClass Airline
+                                <img class="ms-1 mt-n1" src="new-page-link.svg">
+                            </li>
+                            <li class="my-3 align-content-center">
+                                FlightPooling by JetClass
+                                <img class="ms-1 mt-n1" src="new-page-link.svg">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-12 text-start mb-5 mb-md-0">
+                        <h4 class="footer-heading">
+                            Hotline
+                        </h4>
+                        <ul class="footer-list">
+                            <li><strong> US:</strong>+1 (305) 250-2023</li>
+                            <li><strong> US:</strong>+44 789 7078 788</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-12 text-start mb-5 mb-md-0">
+                        <h4 class="footer-heading">
+                            Social
+                        </h4>
+                        <ul class="footer-social">
+                            <li class="ms-0">
+                                <a href="">  <i class="fa fa-facebook  p-2 text-white"></i></a>
+                            </li>
+                            <li class="ms-0">
+                                <a href=""><i class="fa fa-instagram  p-2 text-white" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="ms-0">
+                                <a href=""><i class="fa fa-twitter p-2 text-white" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="ms-0">
+                                <a href=""><i class="fa fa-linkedin p-2 text-white" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li><img src="app-store.svg " class="mb-0 mb-md-3 mx-auto " alt=""></li>
+                            <li><img src="google-play.svg" class="mx-auto " alt=""></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-start logo-img-size">
+                    <img src="argus.png" class="footer-image-style" alt="">
+                    <img src="wyvern.png" alt="">
+                </div>
+                <div class="col-12 py-4">
+                    <p>JetClass is a private jet sourcing and booking platform that arranges charters for customers from
+                        third-party aircraft operators. All such charter flights are operated by FAA certified Part 135
+                        air carriers and JetClass acts as an agent. It is not a direct air carrier and does not carry
+                        out operations of aircraft.</p>
+                </div>
+            </div>
+            <div class="footer-last-part ">
+                <p>© 2022 JetClass | All Rights Reserved</p>
+            </div>
+        </div>
 
     </section>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-      
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+
+
+    <script>
+        jQuery(document).ready(function ($) {
+            //function to check if the .cd-image-container is in the viewport here
+            // ...
+
+            //make the .cd-handle element draggable and modify .cd-resize-img width according to its position
+            $('.cd-image-container').each(function () {
+                var actual = $(this);
+                drags(actual.find('.cd-handle'), actual.find('.cd-resize-img'), actual);
+            });
+
+            //function to upadate images label visibility here
+            // ...
+        });
+
+        //draggable funtionality - credits to http://css-tricks.com/snippets/jquery/draggable-without-jquery-ui/
+        function drags(dragElement, resizeElement, container) {
+            dragElement.on("mousedown vmousedown", function (e) {
+                dragElement.addClass('draggable');
+                resizeElement.addClass('resizable');
+
+                var dragWidth = dragElement.outerWidth(),
+                    xPosition = dragElement.offset().left + dragWidth - e.pageX,
+                    containerOffset = container.offset().left,
+                    containerWidth = container.outerWidth(),
+                    minLeft = containerOffset + 10,
+                    maxLeft = containerOffset + containerWidth - dragWidth - 10;
+
+                dragElement.parents().on("mousemove vmousemove", function (e) {
+                    leftValue = e.pageX + xPosition - dragWidth;
+
+                    //constrain the draggable element to move inside its container
+                    if (leftValue < minLeft) {
+                        leftValue = minLeft;
+                    } else if (leftValue > maxLeft) {
+                        leftValue = maxLeft;
+                    }
+
+                    widthValue = (leftValue + dragWidth / 2 - containerOffset) * 100 / containerWidth + '%';
+
+                    $('.draggable').css('left', widthValue).on("mouseup vmouseup", function () {
+                        $(this).removeClass('draggable');
+                        resizeElement.removeClass('resizable');
+                    });
+
+                    $('.resizable').css('width', widthValue);
+
+                    //function to upadate images label visibility here
+                    // ...
+
+                }).on("mouseup vmouseup", function (e) {
+                    dragElement.removeClass('draggable');
+                    resizeElement.removeClass('resizable');
+                });
+                e.preventDefault();
+            }).on("mouseup vmouseup", function (e) {
+                dragElement.removeClass('draggable');
+                resizeElement.removeClass('resizable');
+            });
+        }
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
 </body>
+<script type="text/javascript">
+    function submitFrom() {
+        var name = $('input[name=name]').val();
+        var Email = $('input[name=email]').val();
+        var Message = $('input[name=message]').val();
+        var Phone = $('input[name=phone]').val();
+    }
+</script>
+
 </html>
