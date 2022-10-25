@@ -2,20 +2,41 @@
 .first-section{
     height: 92vh;
     background-color: black;
-    background-image: url("m2.png");
+    background-image: url("./Assets/m2.png");
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: 40%;
 }
+.header-max-width{
+    max-width: 1920px;
+}
+
+.dropdown-clr li a :hover {
+    color: #29abe2 !important;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #29abe2 !important;
+}
+a:hover{
+    color:#29abe2;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #29abe2 !important;
+    background: transparent;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
 .register-btn {
     background: linear-gradient(90deg,#13b89b,#29abe2);
-    border: none;
+    /* border: none; */
     border-radius: 3px;
     color: white;
     letter-spacing: 1px;
     line-height: 20px;
     padding: 0.51rem 1.4rem;
     text-decoration: none;
+    border: 1px solid transparent;
 }
 .login-btn {
     background-color: white;
@@ -25,6 +46,7 @@
     line-height: 20px;
     padding: 0.4rem 1.4rem;
     text-decoration: none;
+    border: 1px solid transparent;
 
 }
 .register-btn:hover{
@@ -127,7 +149,7 @@
     text-align: center;
 }
 .img-bg{
-    background-image: url("support-cloud.png");
+    background-image: url("./Assets/support-cloud.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -263,13 +285,13 @@
 }
 
 .sec-bg-img{
-    background-image: url("fly_img_bg.png");
+    background-image: url("./Assets/fly_img_bg.png");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
 }
 .reach-column-pic-style{
-    background-image: url("reach-us-bg.png");
+    background-image: url("./Assets/reach-us-bg.png");
     background-position: 0 100%;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -331,7 +353,7 @@
 
 .form-submit-btn{
     background: linear-gradient(90deg,#13b89b,#29abe2);
-    border: none;
+    /* border: none; */
     border-radius: 3px;
     color: white;
     letter-spacing: 1px;
@@ -339,6 +361,7 @@
     padding: 0.51rem 1.4rem;
     text-decoration: none;
     width: 224px;
+    border: 1px solid transparent;
 }
 .form-submit-btn:hover{
     background: white;
